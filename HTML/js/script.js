@@ -12,13 +12,11 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
  ***************/
 
 // Resize sections to fit nicely...
-function resizeWindow() {
+$(window).resize(function() {
 	var h = $(window).height();
 	$('header,section').css('min-height', (h - 14));
 	$('header h1 span').css('height', Math.min($('header h1 span').width() - 40, 425));
-}
-$(window).resize(resizeWindow);
-resizeWindow();
+}).resize();
 
 // Scrolling navigation
 $('nav a').click(function(e) {
@@ -34,7 +32,7 @@ $('#obstacles ul a').click(function(e) {
 });
 // TODO: Add left/right/swipe switching between obstacles.
 
-// Countdown...
+// The Final Countdown - de ne neerrr nerrrrr!
 var countdownTimer = setInterval(function() {
 	v = parseInt( $('.countdown').text() ) - 1;
 	if (v < 0) {

@@ -321,7 +321,6 @@ header h1 {
 	-webkit-animation: 1s logoanimation ;
 	-webkit-animation-fill-mode: both;
 	background-size: contain;
-
 }
 header h1 span {
 	background: top center url(../img/logo-white.png) no-repeat, top center url(../img/logo-orange.png) no-repeat;
@@ -396,15 +395,51 @@ section .inner {
 	width: 50%;
 }
 #obstacles li {
-	width: 50%;
+	width: 45%;
+	margin: 0 5% 5% 0;
 	float: left;
-	margin:  0;
 	padding:  0;
-	height: 150px;
+	background-color: #80b238;
+	background-image: url(../img/bg-green.png);
+	background-position: center top;
+	background-repeat: repeat;
+	border-radius: 15px;
+}
+#obstacles li:hover {
+	background-color: #eef13f;
+	background-image: url(../img/bg-yellow.png);
+
 }
 #obstacles li.wheel,
 #obstacles li.pick{
 	clear: left;
+}
+#obstacles li a {
+	display: block;
+	padding:  80% 0px 10px;
+	background-size: 60%;
+	background:  50% 25% url(../img/obstacle-wheel.png) no-repeat;
+	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+	text-align: center;
+	text-decoration: none;
+}
+#obstacles li a:hover {
+	color: #f46034;
+}
+#obstacles li.wringer a {
+	background-image:  url(../img/obstacle-wringer.png);
+}
+#obstacles li.pick a {
+	background-image:  url(../img/obstacle-pick.png);
+}
+#obstacles li.slide a {
+	background-image:  url(../img/obstacle-slide.png);
+}
+#obstacles li.hatch a {
+	background-image:  url(../img/obstacle-hatch.png);
+}
+#obstacles li.tank a {
+	background-image:  url(../img/obstacle-tank.png);
 }
 #obstacles .panel {
 	float: right;
@@ -419,6 +454,22 @@ section .inner {
 #obstacles .panel .inner div {
 	float: left;
 	width: 16.666%;
+	background:  top center url(../img/green-splash-small.png) no-repeat;
+}
+#obstacles .panel .inner div h2,
+#obstacles .panel .inner div p {
+	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+	font-size: 40px;
+	font-weight: normal;
+	padding-top: 20px;
+	margin:  0;
+	text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+	-webkit-transform: rotate(-8deg);
+	text-align: center;
+}
+#obstacles .panel .inner div p {
+	font-size: 21px;
+	margin: -15px 0 0 0;
 }
 
 /* ==|== prizes section ==================================================== */
