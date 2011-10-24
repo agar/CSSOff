@@ -11,12 +11,12 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #fe6537; color: #fff; text-shadow: none; }
+::selection { background: #fe6537; color: #fff; text-shadow: none; }
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #fff; -webkit-transition: all 0.25s; }
+a:visited { color: #fff; }
+a:hover { color: rgb(15,40,48); }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -61,27 +61,431 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
+/* ==|== primary styles ===================================================== */
 
-/* ==|== primary styles =====================================================
-   Author: 
-   ========================================================================== */
+@font-face {
+	font-family: 'KomikaTitleRegular';
+	src: url('../fonts/KomikaTitle-webfont.eot');
+	src: url('../fonts/KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/KomikaTitle-webfont.woff') format('woff'),
+		 url('../fonts/KomikaTitle-webfont.ttf') format('truetype'),
+		 url('../fonts/KomikaTitle-webfont.svg#KomikaTitleRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'KomikaTitle-PaintRegular';
+	src: url('../fonts/KomikaTitle-Paint-webfont.eot');
+	src: url('../fonts/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/KomikaTitle-Paint-webfont.woff') format('woff'),
+		 url('../fonts/KomikaTitle-Paint-webfont.ttf') format('truetype'),
+		 url('../fonts/KomikaTitle-Paint-webfont.svg#KomikaTitle-PaintRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'KomikaTitleWideRegular';
+	src: url('../fonts/KomikaTitle-Wide-webfont.eot');
+	src: url('../fonts/KomikaTitle-Wide-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/KomikaTitle-Wide-webfont.woff') format('woff'),
+		 url('../fonts/KomikaTitle-Wide-webfont.ttf') format('truetype'),
+		 url('../fonts/KomikaTitle-Wide-webfont.svg#KomikaTitleWideRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'KomikaTitleAxisRegular';
+	src: url('../fonts/KomikaTitle-Axis-webfont.eot');
+	src: url('../fonts/KomikaTitle-Axis-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/KomikaTitle-Axis-webfont.woff') format('woff'),
+		 url('../fonts/KomikaTitle-Axis-webfont.ttf') format('truetype'),
+		 url('../fonts/KomikaTitle-Axis-webfont.svg#KomikaTitleAxisRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'KomikaTitleKapsRegular';
+	src: url('../fonts/KomikaTitle-Kaps-webfont.eot');
+	src: url('../fonts/KomikaTitle-Kaps-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/KomikaTitle-Kaps-webfont.woff') format('woff'),
+		 url('../fonts/KomikaTitle-Kaps-webfont.ttf') format('truetype'),
+		 url('../fonts/KomikaTitle-Kaps-webfont.svg#KomikaTitleKapsRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'DigitalDreamsFat';
+	src: url('../fonts/DIGITALDREAMFAT-webfont.eot');
+	src: url('../fonts/DIGITALDREAMFAT-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/DIGITALDREAMFAT-webfont.woff') format('woff'),
+		 url('../fonts/DIGITALDREAMFAT-webfont.ttf') format('truetype'),
+		 url('../fonts/DIGITALDREAMFAT-webfont.svg#DIGITALDREAMFAT') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSans-Light-webfont.eot');
+	src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansLightItalic';
+	src: url('../fonts/OpenSans-LightItalic-webfont.eot');
+	src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansItalic';
+	src: url('../fonts/OpenSans-Italic-webfont.eot');
+	src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansSemiboldItalic';
+	src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
+	src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSans-Bold-webfont.eot');
+	src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansBoldItalic';
+	src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
+	src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansExtrabold';
+	src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+	src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansExtraboldItalic';
+	src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot');
+	src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* ==|== general page styles ================================================= */
+
+body {
+	background:  top center url(../img/bg-blue.png) repeat #80c1d6;
+	background-image: url(../img/bg-blue.png), url(../img/bg-blue-splash.png);
+	background-position: center top, center top;
+	background-repeat: repeat, no-repeat;
+	color: #fff;
+	font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ==|== top navigation panel ================================================ */
+
+nav {
+	background: rgba(15,40,48,0.05);
+	text-align: center;
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: all 0.5s;
+}
+nav:hover {
+	background: rgba(15,40,48,0.2);
+}
+nav li {
+	display: inline;
+}
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 3px 5px;
+	line-height: 32px;
+	font-size: 12px;
+}
+nav a:hover,
+nav a.current {
+	color: #fff;
+	background: rgba(15,40,48,0.1);
+	border-radius: 16px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+	box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+}
+
+/* ==|== introduction ====================================================== */
+
+header {
+	text-align: center;
+	margin-top: 70px;
+}
+@-webkit-keyframes logoanimation {
+	0%   { -webkit-transform: scale(0) rotate(90deg); opacity: 0 }
+	100%  { -webkit-transform: scale(1) rotate(0deg); opacity: 1 }
+}
+header h1 {
+	background: top center url(../img/green-splash.png) no-repeat;
+	-webkit-animation: 1s logoanimation ;
+	-webkit-animation-fill-mode: both;
+	background-size: contain;
+
+}
+header h1 span {
+	background: top center url(../img/logo-white.png) no-repeat, top center url(../img/logo-orange.png) no-repeat;
+	display: block;
+	height: 425px;
+	overflow: hidden;
+	text-indent: -9999px;
+	-webkit-animation: 1.5s logoanimation;
+	background-size: contain, contain;
+}
+header h2 {
+	color: #fe6537;
+	font-size: 52px;
+	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+	font-weight: normal;
+	text-shadow: 3px 3px 0 #fff;
+	margin: 40px 0 0 0;
+	-webkit-transition: all 0.25s;
+}
+header h2:hover {
+	text-shadow: 7px 7px 0 #fff;
+	margin: 38px 0 0 -2px;
+	font-size: 60px
+}
+header p {
+	font-size: 22px;
+	margin: 10px auto 80px auto;
+	width: 80%;
+	-webkit-transition: all 0.25s;
+}
+header p:hover {
+	-webkit-transform: scale(1.1);
+}
 
 
+/* ==|== common section styling ============================================ */
 
+section h1 {
+	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+	font-weight: normal;
+	font-size: 40px;
+	text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+}
+section h1 span {
+	float: right;
+	width: 50%;
+	height: 40px;
+	background:  top left url(../img/checks.png) repeat-x;
+}
+section {
+	border-top: 7px solid rgba(0,0,0,0.08);
+	border-bottom: 7px solid rgba(0,0,0,0.08);
+}
+section .inner {
+	max-width: 960px;
+	margin:  0 auto;
+}
 
+/* ==|== obstacles section ================================================= */
 
+#obstacles {
+	background-color: #fe6638;
+	background-image: url(../img/bg-orange.png);
+	background-position: center top;
+	background-repeat: repeat;
+}
+#obstacles ul {
+	list-style:  none;
+	margin:  0;
+	padding:  0;
+	float: left;
+	width: 50%;
+}
+#obstacles li {
+	width: 50%;
+	float: left;
+	margin:  0;
+	padding:  0;
+	height: 150px;
+}
+#obstacles li.wheel,
+#obstacles li.pick{
+	clear: left;
+}
+#obstacles .panel {
+	float: right;
+	width: 50%;
+	overflow:  hidden;
+}
+#obstacles .panel .inner {
+	width: 600%;
+	max-width: none;
+	margin: 0;
+}
+#obstacles .panel .inner div {
+	float: left;
+	width: 16.666%;
+}
 
+/* ==|== prizes section ==================================================== */
 
+#prizes {
+	background-color: #80b238;
+	background-image: url(../img/bg-green.png);
+	background-position: center top;
+	background-repeat: repeat;
+}
 
+/* ==|== be a contestant section =========================================== */
 
+form {
 
+}
+fieldset {
 
+}
+.countdown {
+	font-family: DigitalDreamsFat, Courier New, monospace;
+	font-size: 120px;
+	line-height: 320px;
+	text-shadow: 3px 3px rgba(0,0,0,0.8);
+	font-weight: normal;
+	background: top center url(../img/timer.png) no-repeat;
+	background-size: 100% auto;
+	float: right;
+	width: 25%;
+	text-align: center;
+}
 
+/* ==|== page footer ======================================================= */
 
-
-
+footer {
+	margin-top: -45px;
+	text-align: center;
+}
+footer h1 {
+	font-size: 20px;
+}
+.warnings,
+.vcard {
+	width: 620px;
+	margin: 0 auto;
+}
+.warnings p,
+.vcard .adr {
+	margin: 0 0 0;
+	width: 300px;
+}
+.warnings p:first-child,
+.vcard .adr {
+	text-align: right;
+	float: left;
+}
+.warnings p:last-child,
+.vcard .adr:last-child {
+	text-align: left;
+	float: right;
+}
+.licence {
+	border-top: 7px solid rgba(0,0,0,0.08);
+}
 
 /* ==|== non-semantic helper classes ======================================== */
+
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
 .hidden { display: none !important; visibility: hidden; }
@@ -92,11 +496,16 @@ td { vertical-align: top; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
 /* ==|== media queries ====================================================== */
 
 @media only screen and (min-width: 480px) {
-
+	nav a {
+		font-size: 18px;
+		padding: 0 10px;
+	}
+	nav a[href="#top"]:before {
+		content: "Back to "
+	}
 
 }
 
@@ -104,16 +513,14 @@ td { vertical-align: top; }
 
 }
 
-
-
 /* ==|== print styles ======================================================= */
- 
+
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
