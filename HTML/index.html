@@ -23,7 +23,7 @@
 		</ul>
 	</nav>
 
-	<header>
+	<header class="current">
 		<h1><span>Triple Dare</span></h1>
 		<h2>The web&rsquo;s messiest challenge!</h2>
 		<p>Airing Thursdays on the Knucklelodeon Network&trade;</p>
@@ -31,10 +31,10 @@
 
 	<section id="obstacles">
 		<div class="inner clearfix">
-			<h1><span></span>Obstacles</h1>
+			<h1>Obstacles</h1>
 			<ul class="clearfix">
-				<li class="tank"><a href="#tank">The Tank</a></li>
-				<li class="sundae"><a href="#sundae">Sundae Slide</a></li>
+				<li class="tank selected"><a href="#tank">The Tank</a></li>
+				<li class="slide"><a href="#slide">Sundae Slide</a></li>
 				<li class="wheel"><a href="#wheel">Human Hamster Wheel</a></li>
 				<li class="hatch"><a href="#hatch">Down the Hatch</a></li>
 				<li class="pick"><a href="#pick">Pick it!</a></li>
@@ -47,14 +47,14 @@
 						<p>1200 litres of yogurt and sprinkles!</p>
 						<img src="img/obstacle-tank.png" alt="A large tank full of something white (we'll go with yogurt) topped with sprinkles" />
 					</div>
-					<div id="sundae">
+					<div id="slide">
 						<h2>Sundae Slide</h2>
 						<p>6 meters of slippery goodness!</p>
 						<img src="img/obstacle-slide.png" alt="A large spiraling slide with a dirty big sundae waiting at the bottom"/>
 					</div>
 					<div id="wheel">
 						<h2>Human Hamster Wheel</h2>
-						<p>Run <del>rodent</del> <ins>human</ins> run!</p>
+						<p>Like running in circles?</p>
 						<img src="img/obstacle-wheel.png" alt="A human sized hampster wheel"/>
 					</div>
 					<div id="hatch">
@@ -78,31 +78,35 @@
 	</section>
 
 	<section id="prizes">
-		<div class="inner">
+		<div class="inner clearfix">
 			<h1>Prizes</h1>
-			<ul>
+			<ul class="">
 				<li class="space">
+					<img src="img/prize-spacecamp.png" alt="Space Camp Illustration">
 					<h2>A Trip to Space Camp!</h2>
 					<p>Perhaps the greatest prize ever offered by Knucklelodeon! You'll get to ride a retired, <span title="We can't guarantee anything, your life is in your hands.">barely used</span>, Soviet rocket to the moon &ndash; possibly even back again!</p>
 				</li>
 				<li class="skateboard">
+					<img src="img/prize-skateboard.png" alt="Space Camp Illustration">
 					<h2>A Nash Skateboard!</h2>
-					<p>If you&lsquo;re co-ordinated enough to win Triple Dare, then you can probably manage a skateboard. We tried&hellip; and failed.</p>
+					<p>If you didn&lsquo;t break any legs on the Triple Dare obstacles then you might just be co-ordinated enough to manage a skateboard!</p>
 				</li>
 				<li class="keyboard">
+					<img src="img/prize-keyboard.png" alt="Space Camp Illustration">
 					<h2>A Casio Rapman Keyboard!</h2>
 					<p>Rock out on you&lsquo;re own mad keyboard. We think it&lsquo;d be ideal as a poor mans Keytar for your trip to the moon. Batteries not included.</p>
 				</li>
 				<li class="tv">
+					<img src="img/prize-tv.png" alt="Space Camp Illustration">
 					<h2>A 13 Inch <abbr title="Television">TV</abbr>/<abbr title="Video Cassette Recorder">VCR</abbr> Combo!</h2>
-					<p>Remember these, cause we sure don&rsquo;t! Apparently they&lsquo;re all the rage back in the day, we suggest you use it as a paper weight.</p>
+					<p>Remember these&hellip;? Neither do we! Apparently they&lsquo;re all the rage back in the day, we suggest you use it as a paper weight.</p>
 				</li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="participate">
-		<div class="inner">
+		<div class="inner clearfix">
 			<h1>Be a contestant</h1>
 			<form>
 				<fieldset>
@@ -125,10 +129,10 @@
 						</select>
 					</p>
 					<p><input type="url" placeholder="Profile Photo URL" /></p>
-					<p><button>Submit Entry</button></p>
+					<p><button><span>Submit Entry</span></button></p>
 				</fieldset>
 			</form>
-			<span class="countdown">60</span>
+			<div class="countdown">60</div>
 			<h2>The clock is ticking!</h2>
 		</div>
 	</section>
