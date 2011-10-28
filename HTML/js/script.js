@@ -40,6 +40,10 @@ $(window).scroll(function(e) {
 
 // Keyboard navigation
 $(document).bind('keydown',function(e) {
+
+    // Yes we are allowed to enter spaces in the form fields.
+    if (e.target.nodeName == 'INPUT' || e.target.nodeName == 'SELECT') return;
+    
 	switch(e.keyCode) {
 		case 32: // Space
 		case 40: // Down
@@ -84,22 +88,46 @@ $('#obstacles ul a').click(function(e) {
 	$(this).parent().addClass('selected');
 });
 
+// Some form labeling stuff
+$('input[type=text],input[type=email],input[type=url]').focus(function() {
+    $(this).parent().addClass('filled');
+});
+$('input[type=text],input[type=email],input[type=url]').blur(function() {
+    $(this).parent().toggleClass('filled', $(this).val() != '');
+});
+
+
+// Color picker thingy
+
+$('.fakeselect').click(function() {
+    $('.picker', $(this).parent()).toggle();
+});
+
+$('.picker span').click(function(e) {
+    $('.picker', $(this).parent().parent()).hide();
+    $(this).parent().parent().addClass('filled');
+    
+    c = '<span class="swatch"></span>' + $(this).text();
+    $('.fakeselect', $(this).parent().parent()).html( c );
+    $('.fakeselect span', $(this).parent().parent()).css('background', $(this).data('color-value'));
+});
+
 // The Final Countdown - de ne neerrr nerrrrr!
 var countdownTimer = setInterval(function() {
 	v = parseInt( $('.countdown').text() ) - 1;
 	if (v < 0) {
-		$('.countdown').addClass('done');
+		$('.countdown').addClass('done').html('Time&lsquo;s up<sup>*</sup>');
 		clearInterval(countdownTimer);
-		$('#participate h2').html('Time&lsquo;s up!!!');
+		$('#participate h2').html('<small><sup>*</sup>We like the cut of your jib, so we\'ll give you a little longer!</small>').addClass('times-up');
 		// TODO: Something grand when the timer stops... slime splodge perhaps - "Be quick!"
 	} else {
-		$('.countdown').text(v);
+        $('.countdown').html(v);
 	}
 }, 1000);
 
-// Super basic text shadow for the underprivileged
+// Super basic text shadow for the underprivileged (Ie IE)
 $('header h2').poorMansTextShadow({color: '#ffffff', 'vertical': 3, 'horizontal': 3});
-$('section h1').poorMansTextShadow({color: '#333333', 'vertical': 3, 'horizontal': 3});
+$('section h1, button, #participate h2').poorMansTextShadow({color: '#333333', 'vertical': 3, 'horizontal': 3});
 
 
 
