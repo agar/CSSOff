@@ -62,219 +62,219 @@ td { vertical-align: top; }
 /* ==|== primary styles ===================================================== */
 
 @font-face {
-	font-family: 'KomikaTitle-PaintRegular';
-	src: url('../fonts/KomikaTitle-Paint-webfont.eot');
-	src: url('../fonts/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/KomikaTitle-Paint-webfont.woff') format('woff'),
-		 url('../fonts/KomikaTitle-Paint-webfont.ttf') format('truetype'),
-		 url('../fonts/KomikaTitle-Paint-webfont.svg#KomikaTitle-PaintRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'KomikaTitle-PaintRegular';
+    src: url('../fonts/KomikaTitle-Paint-webfont.eot');
+    src: url('../fonts/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KomikaTitle-Paint-webfont.woff') format('woff'),
+         url('../fonts/KomikaTitle-Paint-webfont.ttf') format('truetype'),
+         url('../fonts/KomikaTitle-Paint-webfont.svg#KomikaTitle-PaintRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 
 @font-face {
-	font-family: 'DigitalDreamsFat';
-	src: url('../fonts/DIGITALDREAMFAT-webfont.eot');
-	src: url('../fonts/DIGITALDREAMFAT-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/DIGITALDREAMFAT-webfont.woff') format('woff'),
-		 url('../fonts/DIGITALDREAMFAT-webfont.ttf') format('truetype'),
-		 url('../fonts/DIGITALDREAMFAT-webfont.svg#DIGITALDREAMFAT') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'DigitalDreamsFat';
+    src: url('../fonts/DIGITALDREAMFAT-webfont.eot');
+    src: url('../fonts/DIGITALDREAMFAT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DIGITALDREAMFAT-webfont.woff') format('woff'),
+         url('../fonts/DIGITALDREAMFAT-webfont.ttf') format('truetype'),
+         url('../fonts/DIGITALDREAMFAT-webfont.svg#DIGITALDREAMFAT') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-	font-family: 'OpenSansSemibold';
-	src: url('../fonts/OpenSans-Semibold-webfont.eot');
-	src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
-		 url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
-		 url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-	font-family: 'OpenSansSemiboldItalic';
-	src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
-	src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
-		 url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
-		 url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'OpenSansSemiboldItalic';
+    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 /* ==|== general page styles ================================================= */
 
 body {
-	background:  top center url(../img/bg-blue.png) repeat #80c1d6;
-	background-image: url(../img/bg-blue.png), url(../img/bg-blue-splash.png);
-	background-position: center top, center top;
-	background-repeat: repeat, no-repeat;
-	color: #fff;
-	font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.4;
+    background:  top center url(../img/bg-blue.png) repeat #80c1d6;
+    background-image: url(../img/bg-blue.png), url(../img/bg-blue-splash.png);
+    background-position: center top, center top;
+    background-repeat: repeat, no-repeat;
+    color: #fff;
+    font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
 }
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 h1, h2 {
-	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	font-weight: normal;
+    font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+    font-weight: normal;
 }
 
 /* ==|== top navigation panel ================================================ */
 
 nav {
-	background: rgba(15,40,48,0.05);
-	text-align: center;
-	position: fixed;
-	z-index: 999999;
-	top: 0;
-	left: 0;
-	right: 0;
-	-webkit-transition: all 0.5s;
-	   -moz-transition: all 0.5s;
-	        transition: all 0.5s;       
+    background: rgba(15,40,48,0.05);
+    text-align: center;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+            transition: all 0.5s;
 }
 nav:hover {
-	background: rgba(15,40,48,0.4);
+    background: rgba(15,40,48,0.4);
 }
 nav li {
-	display: inline;
+    display: inline;
 }
 nav a {
-    
-	text-decoration: none;
-	text-transform: uppercase;
-	line-height: 32px;
-	font-size: 18px;
-	padding: 0 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 18px;
+    padding: 0 10px;
 }
 nav a[href="#top"]:before {
-		content: ""
-	}
+        content: ""
+    }
 nav a:hover,
 nav a.selected {
-	color: #fff;
-	background: rgba(15,40,48,0.1);
-	-webkit-border-radius: 16px;
-	   -moz-border-radius: 16px;
+    color: #fff;
+    background: rgba(15,40,48,0.1);
+    -webkit-border-radius: 16px;
+       -moz-border-radius: 16px;
             border-radius: 16px;
-	-webkit-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+    -webkit-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
        -moz-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
             text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
-	-webkit-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
-	   -moz-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
-	    -ms-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
-	     -o-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
-	        box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+       -moz-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+        -ms-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+         -o-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+            box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
 }
 
 /* ==|== introduction ====================================================== */
 
 header {
-	text-align: center;
-	padding: 0px;
+    text-align: center;
+    padding: 0px;
 }
 @-webkit-keyframes logoanimation {
-	0%   { -webkit-transform: scale(0) rotate(90deg); opacity: 0 }
-	100%  { -webkit-transform: scale(1) rotate(0deg); opacity: 1 }
+    0%   { -webkit-transform: scale(0) rotate(90deg); opacity: 0 }
+    100%  { -webkit-transform: scale(1) rotate(0deg); opacity: 1 }
 }
 @-moz-keyframes logoanimation {
-	0%   { -moz-transform: scale(0) rotate(90deg); opacity: 0 }
-	100%  { -moz-transform: scale(1) rotate(0deg); opacity: 1 }
+    0%   { -moz-transform: scale(0) rotate(90deg); opacity: 0 }
+    100%  { -moz-transform: scale(1) rotate(0deg); opacity: 1 }
 }
 
 header h1 {
-	margin-top: 60px;
-	background: top center url(../img/green-splash.png) no-repeat;
-	-webkit-background-size:  contain;
+    margin-top: 60px;
+    background: top center url(../img/green-splash.png) no-repeat;
+    -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
 
-	overflow:  hidden;
-	webkit-transform-origin: 50% 50%;
-    
-	-webkit-animation: 0.75s logoanimation;
-	   -moz-animation: 0.75s logoanimation;
-		    animation: 0.75s logoanimation;
-	-webkit-animation-fill-mode: both;
-	   -moz-animation-fill-mode: both;
-		    animation-fill-mode: both;
+    overflow:  hidden;
+    webkit-transform-origin: 50% 50%;
+
+    -webkit-animation: 0.75s logoanimation;
+       -moz-animation: 0.75s logoanimation;
+            animation: 0.75s logoanimation;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 header h1 span {
-	background: top center url(../img/logo-white.png) no-repeat, top center url(../img/logo-orange.png) no-repeat;
-	display: inline-block;
-	height: 425px;
-	max-width: 500px;
-	width: 100%;
-	overflow: hidden;
-	text-indent: -9999px;
-	webkit-transform-origin: 50% 50%;
-	-webkit-animation: 1.5s logoanimation;
-	   -moz-animation: 1.5s logoanimation;
-			animation: 1.5s logoanimation;
-	-webkit-background-size:  contain, contain;
+    background: top center url(../img/logo-white.png) no-repeat, top center url(../img/logo-orange.png) no-repeat;
+    display: inline-block;
+    height: 425px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    text-indent: -9999px;
+    webkit-transform-origin: 50% 50%;
+    -webkit-animation: 1.5s logoanimation;
+       -moz-animation: 1.5s logoanimation;
+            animation: 1.5s logoanimation;
+    -webkit-background-size:  contain, contain;
        -moz-background-size:  contain, contain;
             background-size:  contain, contain;
 
-	-webkit-transition: all 0.25s;
-	   -moz-transition: all 0.25s;
-	        transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+       -moz-transition: all 0.25s;
+            transition: all 0.25s;
 }
 header h1 span:hover {
-	-webkit-transform: rotate(5deg) scale(1.2);
-	   -moz-transform: rotate(5deg) scale(1.2);
-	    -ms-transform: rotate(5deg) scale(1.2);
+    -webkit-transform: rotate(5deg) scale(1.2);
+       -moz-transform: rotate(5deg) scale(1.2);
+        -ms-transform: rotate(5deg) scale(1.2);
             transform: rotate(5deg) scale(1.2);
 }
 
 header h2 {
-	color: #fe6537;
-	font-size: 52px;
-	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	font-weight: normal;
-	-webkit-text-shadow: 3px 3px 0 #fff;
+    color: #fe6537;
+    font-size: 52px;
+    font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+    font-weight: normal;
+    -webkit-text-shadow: 3px 3px 0 #fff;
        -moz-text-shadow: 3px 3px 0 #fff;
             text-shadow: 3px 3px 0 #fff;
-	margin: 0;
-	position: relative;
-	-webkit-transition: all 0.25s;
-	   -moz-transition: all 0.25s;
-		    transition: all 0.25s;
+    margin: 0;
+    position: relative;
+    -webkit-transition: all 0.25s;
+       -moz-transition: all 0.25s;
+            transition: all 0.25s;
 }
 header h2:hover {
-	-webkit-text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
+    -webkit-text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
        -mox-text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
-	        text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
-	top: -3px;
-	left: -2px;
+            text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
+    top: -3px;
+    left: -2px;
 
 }
 header p {
-	font-size: 22px;
-	margin: 10px auto 0px auto;
-	width: 80%;
-	-webkit-transition: all 0.25s;
-	   -moz-transition: all 0.25s;
-	        transition: all 0.25s;
+    font-size: 22px;
+    margin: 10px auto 0px auto;
+    width: 80%;
+    -webkit-transition: all 0.25s;
+       -moz-transition: all 0.25s;
+            transition: all 0.25s;
 }
 header p:hover {
-	-webkit-transform: scale(1.1);
-	   -moz-transform: scale(1.1);
-	    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
             transform: scale(1.1);
-	color: #fff;
-	-webkit-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
+    color: #fff;
+    -webkit-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
        -moz-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
             text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
 
@@ -284,153 +284,153 @@ header p:hover {
 /* ==|== common section styling ============================================ */
 
 section h1 {
-	font-size: 40px;
-	text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
-	margin: 40px 0 60px 0;
-	background: 180px 10px url(../img/checks.png) no-repeat;
+    font-size: 40px;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+    margin: 40px 0 60px 0;
+    background: 180px 10px url(../img/checks.png) no-repeat;
 }
 section {
-	border-top: 7px solid rgba(0,0,0,0.08);
-	border-bottom: 7px solid rgba(0,0,0,0.08);
+    border-top: 7px solid rgba(0,0,0,0.08);
+    border-bottom: 7px solid rgba(0,0,0,0.08);
 }
 section .inner {
-	max-width: 940px;
-	margin:  0 auto;
+    max-width: 940px;
+    margin:  0 auto;
 }
 
 /* ==|== obstacles section ================================================= */
 
 #obstacles {
-	background-color: #fe6638;
-	background-image: url(../img/bg-orange.png);
-	background-position: center top;
-	background-repeat: repeat;
+    background-color: #fe6638;
+    background-image: url(../img/bg-orange.png);
+    background-position: center top;
+    background-repeat: repeat;
 }
 #obstacles h1 {
-	background-position: 280px 10px;
+    background-position: 280px 10px;
 }
 
 #obstacles ul {
-	list-style:  none;
-	margin:  0;
-	padding:  0;
-	float: left;
-	width: 50%;
+    list-style:  none;
+    margin:  0;
+    padding:  0;
+    float: left;
+    width: 50%;
 }
 #obstacles li {
-	width: 45%;
-	margin: 0 5% 5% 0;
-	float: left;
-	padding:  0;
-	background-color: #80b238;
-	background-image: url(../img/bg-green.png);
-	background-position: center top;
-	background-repeat: repeat;
-	-webkit-border-radius: 15px;
+    width: 45%;
+    margin: 0 5% 5% 0;
+    float: left;
+    padding:  0;
+    background-color: #80b238;
+    background-image: url(../img/bg-green.png);
+    background-position: center top;
+    background-repeat: repeat;
+    -webkit-border-radius: 15px;
        -moz-border-radius: 15px;
             border-radius: 15px;
-    
-	-webkit-transition: all 0.5s;
+
+    -webkit-transition: all 0.5s;
 }
 #obstacles li:hover,
 #obstacles li.selected {
-	background-color: #eef13f;
-	background-image: url(../img/bg-yellow.png);
+    background-color: #eef13f;
+    background-image: url(../img/bg-yellow.png);
 
 }
 #obstacles li.wheel,
 #obstacles li.pick{
-	clear: left;
+    clear: left;
 }
 #obstacles li a {
-	display: block;
-	padding:  80% 0px 10px;
-	background:  50% 25% url(../img/obstacle-wheel.png) no-repeat;
-	-webkit-background-size:  65%;
+    display: block;
+    padding:  80% 0px 10px;
+    background:  50% 25% url(../img/obstacle-wheel.png) no-repeat;
+    -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
 
     font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	text-align: center;
-	text-decoration: none;
+    text-align: center;
+    text-decoration: none;
 }
 #obstacles li a:hover,
 #obstacles li.selected a{
-	color: #f46034;
+    color: #f46034;
 }
 #obstacles li.wringer a {
-	background-image:  url(../img/obstacle-wringer.png);
-	-webkit-background-size:  65%;
+    background-image:  url(../img/obstacle-wringer.png);
+    -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
 
 }
 #obstacles li.pick a {
-	background-image:  url(../img/obstacle-pick.png);
-	-webkit-background-size:  65%;
+    background-image:  url(../img/obstacle-pick.png);
+    -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
 
 }
 #obstacles li.slide a {
-	background-image:  url(../img/obstacle-slide.png);
-	-webkit-background-size:  50%;
+    background-image:  url(../img/obstacle-slide.png);
+    -webkit-background-size:  50%;
        -moz-background-size:  50%;
             background-size:  50%;
 
 }
 #obstacles li.hatch a {
-	background-image:  url(../img/obstacle-hatch.png);
-	-webkit-background-size:  50%;
+    background-image:  url(../img/obstacle-hatch.png);
+    -webkit-background-size:  50%;
        -moz-background-size:  50%;
             background-size:  50%;
 
 }
 #obstacles li.tank a {
-	background-image:  url(../img/obstacle-tank.png);
-	-webkit-background-size:  65%;
+    background-image:  url(../img/obstacle-tank.png);
+    -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
 
-	background-position: 50% 35%
+    background-position: 50% 35%
 }
 #obstacles .panel {
-	float: right;
-	width: 50%;
-	overflow:  hidden;
+    float: right;
+    width: 50%;
+    overflow:  hidden;
 }
 #obstacles .panel .inner {
-	width: 605%;
-	max-width: none;
-	margin: 0;
+    width: 605%;
+    max-width: none;
+    margin: 0;
 }
 #obstacles .panel .inner div {
-	float: left;
-	width: 16%;
-	margin-right: 0.66%;
-	background:  top center url(../img/green-splash-small.png) no-repeat;
-	text-align: center;
+    float: left;
+    width: 16%;
+    margin-right: 0.66%;
+    background:  top center url(../img/green-splash-small.png) no-repeat;
+    text-align: center;
 
 }
 #obstacles .panel .inner div h2,
 #obstacles .panel .inner div p {
-	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	font-size: 40px;
-	font-weight: normal;
-	padding-top: 20px;
-	margin:  0;
-	text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-	-webkit-transform: rotate(-8deg);
+    font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 20px;
+    margin:  0;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    -webkit-transform: rotate(-8deg);
        -moz-transform: rotate(-8deg);
         -ms-transform: rotate(-8deg);
             transform: rotate(-8deg);
 }
 #obstacles .panel .inner div p {
-	font-size: 21px;
-	margin: -15px 0 0 0;
+    font-size: 21px;
+    margin: -15px 0 0 0;
 }
 #obstacles .panel .inner div img {
-	max-width: 80%;
+    max-width: 80%;
 }
 #obstacles .panel .inner div#slide img {
     max-width: 70%;
@@ -439,103 +439,103 @@ section .inner {
 /* ==|== prizes section ==================================================== */
 
 #prizes {
-	background-color: #80b238;
-	background-image: url(../img/bg-green.png);
-	background-position: center top;
-	background-repeat: repeat;
+    background-color: #80b238;
+    background-image: url(../img/bg-green.png);
+    background-position: center top;
+    background-repeat: repeat;
 }
 #prizes ul {
-	list-style:  none;
-	margin: 0;
-	padding:  0;
+    list-style:  none;
+    margin: 0;
+    padding:  0;
 }
 #prizes li {
-	width: 50%;
-	float: left;
-	position: relative;
-	text-align: center;
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
 }
 #prizes li h2 {
-	font-size: 16px;
+    font-size: 16px;
 }
 #prizes li p {
-	position: absolute;
-	opacity: 0;
-	filter: alpha(opacity = 0);
-	-webkit-transition: opacity 0.5s;
-	   -moz-transition: opacity 0.5s;
-	    -ms-transition: opacity 0.5s;
-	     -o-transition: opacity 0.5s;
-	        transition: opacity 0.5s;
-	bottom: 3em;
-	left: 10%;
-	right: 10%;
-	background-color: #80c1d6;
-	background-image: url(../img/bg-blue.png);
-	-webkit-border-radius: 10px;
-	   -moz-border-radius: 10px;
-	       border-radius: 10px;
-	border:  2px solid  rgba(0,0,0,0.2);
-	padding: 10px 20px;
-	font-size: 16px;
-	-webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
-	   -moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -webkit-transition: opacity 0.5s;
+       -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+         -o-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+    bottom: 3em;
+    left: 10%;
+    right: 10%;
+    background-color: #80c1d6;
+    background-image: url(../img/bg-blue.png);
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+           border-radius: 10px;
+    border:  2px solid  rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    font-size: 16px;
+    -webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+       -moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
             box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
 }
 .oldie #prizes li p {
-	border: 2px solid #70b1c6;
-	border-bottom: 2px solid #447b8c;
-	border-right: 2px solid #447b8c;
+    border: 2px solid #70b1c6;
+    border-bottom: 2px solid #447b8c;
+    border-right: 2px solid #447b8c;
 }
 #prizes li:hover p {
-	opacity: 1;
-	filter: alpha(opacity = 100);
+    opacity: 1;
+    filter: alpha(opacity = 100);
 }
 #prizes li img,
 #prizes li h2 {
-	-webkit-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
        -moz-transition: all 0.5s;
             transition: all 0.5s;
 }
 
 #prizes li:hover img {
-	-webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
        -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
 }
 #prizes li:hover h2 {
-	-webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
        -moz-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
 }
 .keyboard {
-	clear: left;
-	top:90px;
+    clear: left;
+    top:90px;
 }
 .tv {
-	top: -110px;
+    top: -110px;
 }
 
 
 /* ==|== be a contestant section =========================================== */
 
 #participate {
-	border-bottom: 0;
+    border-bottom: 0;
 }
 #participate .inner {
-	padding-bottom: 110px;
-	border-bottom: 7px solid rgba(0,0,0,0.08);
+    padding-bottom: 110px;
+    border-bottom: 7px solid rgba(0,0,0,0.08);
 }
 
 #participate h1 {
-	background-position: 420px 10px;
+    background-position: 420px 10px;
 }
 
 form {
-	float: left;
-	width: 42%;
+    float: left;
+    width: 42%;
 }
 form div {
     position: relative;
@@ -543,7 +543,7 @@ form div {
 }
 label {
     display: none;
-    position: absolute;  
+    position: absolute;
     font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
     font-size: 16px;
     left: 10px;
@@ -568,30 +568,25 @@ div.filled label {
 input,
 textarea,
 .fakeselect  {
-	background-color: #fe6638;
-	background-image: url(../img/bg-orange.png);
-	background-position: center top;
-	background-repeat: repeat;
-	border:  0;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-	        border-radius: 5px;
-	color: #fff;
-	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	padding:  8px 10px;
-	font-size: 16px;
-	width: 90%;
+    background: center top url(../img/bg-orange.png) repeat #fe6638;
+    border:  0;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    color: #fff;
+    font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+    padding:  8px 10px;
+    font-size: 16px;
+    width: 90%;
+}
+.fakeselect {
+    background: 100% 50% url(../img/form-arrow.png) no-repeat, center top url(../img/bg-orange.png) repeat #fe6638;
 }
 ::-webkit-input-placeholder {
-color: #fff;
+    color: #fff;
 }
 :-moz-placeholder {
-	color: #fff;
-}
-
-.color-picker select,
-.gender select {
-    display: none;
+    color: #fff;
 }
 .color-picker {
     float: left;
@@ -622,7 +617,7 @@ color: #fff;
     height: 40px;
     overflow: hidden;
     text-indent: -1000px;
-    margin: 5px; 
+    margin: 5px;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
            border-radius: 5px;
@@ -683,15 +678,15 @@ color: #fff;
 }
 
 form button {
-	background:  top center url(../img/green-splash-small.png) no-repeat;
-	-webkit-background-size:  contain;
+    background:  top center url(../img/green-splash-small.png) no-repeat;
+    -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
 
-	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	color: #fff;
-	border:  0;
-	width: 90%;
+    font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+    color: #fff;
+    border:  0;
+    width: 90%;
     -webkit-transition: all .25s;
        -moz-transition: all .25s;
             transition: all .25s;
@@ -704,35 +699,35 @@ form button:hover  {
             transform: scale(1.1);
 }
 form button span {
-	-webkit-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-	   -moz-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-	        text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-	-webkit-transform: rotate(-8deg);
+    -webkit-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+       -moz-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    -webkit-transform: rotate(-8deg);
        -moz-transform: rotate(-8deg);
         -ms-transform: rotate(-8deg);
             transform: rotate(-8deg);
-	display: block;
-	font-size: 26px;
-	padding:  50px 0;
+    display: block;
+    font-size: 26px;
+    padding:  50px 0;
 }
 
 
 .countdown {
-	font-family: DigitalDreamsFat, Courier New, monospace;
-	font-size: 120px;
-	line-height: 320px;
-	-webkit-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
-	   -moz-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+    font-family: DigitalDreamsFat, Courier New, monospace;
+    font-size: 120px;
+    line-height: 320px;
+    -webkit-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+       -moz-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
             text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
-	font-weight: normal;
-	background: top center url(../img/timer.png) no-repeat;
-	-webkit-background-size:  contain;
+    font-weight: normal;
+    background: top center url(../img/timer.png) no-repeat;
+    -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
 
-	float: right;
-	width: 50%;
-	text-align: center;
+    float: right;
+    width: 50%;
+    text-align: center;
     -webkit-transition: text-shadow .25s;
        -moz-transition: text-shadow .25s;
             transition: text-shadow .25s;
@@ -745,20 +740,20 @@ form button span {
     -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
-	
+
 }
 .done {
-	background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/timer.png) no-repeat;
-   	-webkit-background-size:  auto, contain;
+    background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/timer.png) no-repeat;
+       -webkit-background-size:  auto, contain;
        -moz-background-size:  auto, contain;
             background-size:  auto, contain;
 
     font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
-	font-weight: normal;
+    font-weight: normal;
     font-size: 40px;
 }
 .done:hover {
-	background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/countdown-bg.gif) no-repeat;
+    background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/countdown-bg.gif) no-repeat;
     -webkit-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
        -moz-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
             text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
@@ -767,15 +762,15 @@ form button span {
             background-size:  auto, contain;
 }
 #participate h2 {
-	clear: right;
-	width: 25%;
-	padding: 0 11.5%;
-	float: right;
-	-webkit-text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+    clear: right;
+    width: 25%;
+    padding: 0 11.5%;
+    float: right;
+    -webkit-text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
        -moz-text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
             text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
-	font-size: 40px;
-	text-align: center;
+    font-size: 40px;
+    text-align: center;
 }
 #participate h2 small {
     display: block;
@@ -789,35 +784,35 @@ form button span {
 /* ==|== page footer ======================================================= */
 
 footer {
-	max-width: 940px;
-	margin: -45px auto 0 auto;
-	text-align: center;
+    max-width: 940px;
+    margin: -45px auto 0 auto;
+    text-align: center;
 }
 footer h1 {
-	font-size: 20px;
+    font-size: 20px;
 }
 .warnings,
 .vcard {
-	width: 620px;
-	margin: 0 auto;
+    width: 620px;
+    margin: 0 auto;
 }
 .warnings p,
 .vcard .adr {
-	margin: 0 0 0;
-	width: 300px;
+    margin: 0 0 0;
+    width: 300px;
 }
 .warnings p:first-child,
 .vcard .adr {
-	text-align: right;
-	float: left;
+    text-align: right;
+    float: left;
 }
 .warnings p:last-child,
 .vcard .adr:last-child {
-	text-align: left;
-	float: right;
+    text-align: left;
+    float: right;
 }
 .licence {
-	border-top: 7px solid rgba(0,0,0,0.08);
+    border-top: 7px solid rgba(0,0,0,0.08);
     text-align: center;
     padding: 15px;
 }
@@ -856,7 +851,7 @@ footer h1 {
     header h2 {
         margin: 40px 0;
     }
-   
+
     #obstacles ul {
         width: 15%;
         margin-left: 5%;
@@ -867,7 +862,7 @@ footer h1 {
     #obstacles .panel {
         width: 75%;
     }
-    
+
     #obstacles li a,
     #obstacles li.tank a    {
         text-indent: -1000px;
@@ -901,23 +896,23 @@ footer h1 {
     .keyboard {
         top: 40px;
     }
-    
+
 }
 
 @media only screen and (max-width: 480px) {
-	
+
     nav a {
         padding: 3px 5px;
-        font-size: 12px;		
-	}
-	nav a[href="#top"]:before {
-		content: ""
-	}
+        font-size: 12px;
+    }
+    nav a[href="#top"]:before {
+        content: ""
+    }
     header h1 {
         width: 75%;
         margin: 30px auto 0;
     }
-    
+
     header h2 {
         font-size: 32px;
         margin: 20px 0
@@ -962,7 +957,7 @@ footer h1 {
         float: none;
         text-align: center;
     }
-        
+
     .tv {
         top: -30px;
     }
@@ -970,13 +965,13 @@ footer h1 {
         top: 40px;
     }
 
-} 
+}
 
 
 @media only screen and (min-width: 1268px) {
 
     /* Plenty of pixel screens */
-    
+
 }
 
 
@@ -996,6 +991,6 @@ footer h1 {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
-  
+
   /* TODO: Better print layout */
 }
