@@ -104,7 +104,9 @@ $('html').toggleClass('no-placeholder', ! Modernizr.input.placeholder);
 $('.fakeselect').click(function() {
     $('.picker', $(this).parent()).toggle();
 });
-
+$('.color-picker label, .gender label').click(function(e) {
+    $(this).parent().find('.fakeselect').click();
+});
 $('.picker span').click(function(e) {
     $('.picker', $(this).parent().parent()).hide();
     $(this).parent().parent().addClass('filled');

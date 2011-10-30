@@ -230,7 +230,8 @@ header h1 span {
 header h1 span:hover {
 	-webkit-transform: rotate(5deg) scale(1.2);
 	   -moz-transform: rotate(5deg) scale(1.2);
-	        transform: rotate(5deg) scale(1.2);
+	    -ms-transform: rotate(5deg) scale(1.2);
+            transform: rotate(5deg) scale(1.2);
 }
 
 header h2 {
@@ -266,7 +267,8 @@ header p {
 header p:hover {
 	-webkit-transform: scale(1.1);
 	   -moz-transform: scale(1.1);
-	        transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+            transform: scale(1.1);
 	color: #fff;
 	-webkit-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
        -moz-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
@@ -415,8 +417,9 @@ section .inner {
 	margin:  0;
 	text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
 	-webkit-transform: rotate(-8deg);
-    -moz-transform: rotate(-8deg);
-    transform: rotate(-8deg);
+       -moz-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+            transform: rotate(-8deg);
 }
 #obstacles .panel .inner div p {
 	font-size: 21px;
@@ -491,11 +494,13 @@ section .inner {
 #prizes li:hover img {
 	-webkit-transform: scale(1.1);
        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
             transform: scale(1.1);
 }
 #prizes li:hover h2 {
 	-webkit-transform: scale(1.5);
        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
             transform: scale(1.5);
 }
 .keyboard {
@@ -538,6 +543,9 @@ label {
     top: 10px;
 }
 .no-placeholder label {
+    display: block;
+}
+.no-placeholder .filled label {
     display: block;
 }
 div.filled label {
@@ -685,6 +693,7 @@ form button {
 form button:hover  {
     -webkit-transform: scale(1.1);
        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
             transform: scale(1.1);
 }
 form button span {
@@ -693,6 +702,7 @@ form button span {
 	        text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
 	-webkit-transform: rotate(-8deg);
        -moz-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
             transform: rotate(-8deg);
 	display: block;
 	font-size: 26px;
