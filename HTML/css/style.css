@@ -142,7 +142,8 @@ nav {
 	left: 0;
 	right: 0;
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	        transition: all 0.5s;       
 }
 nav:hover {
 	background: rgba(15,40,48,0.4);
@@ -161,8 +162,12 @@ nav a:hover,
 nav a.selected {
 	color: #fff;
 	background: rgba(15,40,48,0.1);
-	border-radius: 16px;
-	text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+            border-radius: 16px;
+	-webkit-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+       -moz-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
 	-webkit-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
 	   -moz-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
 	    -ms-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
@@ -188,9 +193,13 @@ header {
 header h1 {
 	margin-top: 60px;
 	background: top center url(../img/green-splash.png) no-repeat;
-	background-size: contain;
+	-webkit-background-size:  contain;
+       -moz-background-size:  contain;
+            background-size:  contain;
+
 	overflow:  hidden;
 	webkit-transform-origin: 50% 50%;
+    
 	-webkit-animation: 0.75s logoanimation;
 	   -moz-animation: 0.75s logoanimation;
 		    animation: 0.75s logoanimation;
@@ -207,11 +216,13 @@ header h1 span {
 	overflow: hidden;
 	text-indent: -9999px;
 	webkit-transform-origin: 50% 50%;
-
 	-webkit-animation: 1.5s logoanimation;
 	   -moz-animation: 1.5s logoanimation;
 			animation: 1.5s logoanimation;
-	background-size: contain, contain;
+	-webkit-background-size:  contain, contain;
+       -moz-background-size:  contain, contain;
+            background-size:  contain, contain;
+
 	-webkit-transition: all 0.25s;
 	   -moz-transition: all 0.25s;
 	        transition: all 0.25s;
@@ -227,7 +238,9 @@ header h2 {
 	font-size: 52px;
 	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
 	font-weight: normal;
-	text-shadow: 3px 3px 0 #fff;
+	-webkit-text-shadow: 3px 3px 0 #fff;
+       -moz-text-shadow: 3px 3px 0 #fff;
+            text-shadow: 3px 3px 0 #fff;
 	margin: 0;
 	position: relative;
 	-webkit-transition: all 0.25s;
@@ -235,7 +248,9 @@ header h2 {
 		    transition: all 0.25s;
 }
 header h2:hover {
-	text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
+	-webkit-text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
+       -mox-text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
+	        text-shadow: 2px 2px 0 #c8502d, 5px 7px 0 #fff,  4px 6px 0 #fff,  3px 5px 0 #fff, 2px 4px 0 #fff,  1px 3px 0 #fff ;
 	top: -3px;
 	left: -2px;
 
@@ -253,7 +268,9 @@ header p:hover {
 	   -moz-transform: scale(1.1);
 	        transform: scale(1.1);
 	color: #fff;
-	text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
+	-webkit-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
+       -moz-text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
+            text-shadow: 0px 2px 0 rgba(0,0,0,0.3) ;
 
 }
 
@@ -303,7 +320,10 @@ section .inner {
 	background-image: url(../img/bg-green.png);
 	background-position: center top;
 	background-repeat: repeat;
-	border-radius: 15px;
+	-webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+    
 	-webkit-transition: all 0.5s;
 }
 #obstacles li:hover,
@@ -320,7 +340,10 @@ section .inner {
 	display: block;
 	padding:  80% 0px 10px;
 	background:  50% 25% url(../img/obstacle-wheel.png) no-repeat;
-	background-size: 65%;
+	-webkit-background-size:  65%;
+       -moz-background-size:  65%;
+            background-size:  65%;
+
     font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
 	text-align: center;
 	text-decoration: none;
@@ -331,23 +354,38 @@ section .inner {
 }
 #obstacles li.wringer a {
 	background-image:  url(../img/obstacle-wringer.png);
-	background-size: 65%;
+	-webkit-background-size:  65%;
+       -moz-background-size:  65%;
+            background-size:  65%;
+
 }
 #obstacles li.pick a {
 	background-image:  url(../img/obstacle-pick.png);
-	background-size: 65%;
+	-webkit-background-size:  65%;
+       -moz-background-size:  65%;
+            background-size:  65%;
+
 }
 #obstacles li.slide a {
 	background-image:  url(../img/obstacle-slide.png);
-	background-size: 50%;
+	-webkit-background-size:  50%;
+       -moz-background-size:  50%;
+            background-size:  50%;
+
 }
 #obstacles li.hatch a {
 	background-image:  url(../img/obstacle-hatch.png);
-	background-size: 50%;
+	-webkit-background-size:  50%;
+       -moz-background-size:  50%;
+            background-size:  50%;
+
 }
 #obstacles li.tank a {
 	background-image:  url(../img/obstacle-tank.png);
-	background-size: 65%;
+	-webkit-background-size:  65%;
+       -moz-background-size:  65%;
+            background-size:  65%;
+
 	background-position: 50% 35%
 }
 #obstacles .panel {
@@ -377,6 +415,8 @@ section .inner {
 	margin:  0;
 	text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
 	-webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
 }
 #obstacles .panel .inner div p {
 	font-size: 21px;
@@ -422,15 +462,15 @@ section .inner {
 	right: 10%;
 	background-color: #80c1d6;
 	background-image: url(../img/bg-blue.png);
-	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	       border-radius: 10px;
 	border:  2px solid  rgba(0,0,0,0.2);
 	padding: 10px 20px;
 	font-size: 16px;
-	-moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
-	-ms-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
-	-o-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
-	box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+            box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
 }
 .oldie #prizes li p {
 	border: 2px solid #70b1c6;
@@ -444,13 +484,19 @@ section .inner {
 #prizes li img,
 #prizes li h2 {
 	-webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+            transition: all 0.5s;
 }
 
 #prizes li:hover img {
 	-webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+            transform: scale(1.1);
 }
 #prizes li:hover h2 {
 	-webkit-transform: scale(1.5);
+       -moz-transform: scale(1.5);
+            transform: scale(1.5);
 }
 .keyboard {
 	clear: left;
@@ -491,8 +537,7 @@ label {
     left: 10px;
     top: 10px;
 }
-.oldie label,
-.ie9 label {
+.no-placeholder label {
     display: block;
 }
 div.filled label {
@@ -501,7 +546,9 @@ div.filled label {
     left: auto;
     top: -12px;
     font-size: 14px;
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    -webkit-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+       -moz-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
 }
 input,
 textarea,
@@ -511,7 +558,9 @@ textarea,
 	background-position: center top;
 	background-repeat: repeat;
 	border:  0;
-	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 	color: #fff;
 	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
 	padding:  8px 10px;
@@ -537,13 +586,16 @@ textarea,
 .picker {
     display: none;
     background-color: #EEF13F;
-    	background-image: url(../img/bg-yellow.png);
-
+    background-image: url(../img/bg-yellow.png);
     padding: 2px ;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     position: absolute;
     z-index: 1000;
-    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
     top: 10px;
     left: 10px;
     width: 165px;
@@ -556,15 +608,26 @@ textarea,
     overflow: hidden;
     text-indent: -1000px;
     margin: 5px; 
-    border-radius: 5px;
-    box-shadow: inset 3px 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+           border-radius: 5px;
+    -webkit-box-shadow: inset 3px 4px 0 rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: inset 3px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: inset 3px 4px 0 rgba(0, 0, 0, 0.2);
     border: 2px solid rgba(0,0,0,0.2);
     -webkit-transition: all 0.2s;
+       -moz-transition: all 0.2s;
+            transition: all 0.2s;
     cursor: pointer;
-      background-size: contain;
+    -webkit-background-size:  contain;
+       -moz-background-size:  contain;
+            background-size:  contain;
+
 }
 .picker span:hover {
-    box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.2);
     border: 2px solid rgba(0,0,0,0.3)
 }
 .fakeselect {
@@ -575,9 +638,14 @@ textarea,
     width: 1.1em;
     height: 1.1em;
     margin-right: 0.5em;
-    border-radius: 2px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background-size: contain;
+    -webkit-background-size:  contain;
+       -moz-background-size:  contain;
+            background-size:  contain;
+
 }
 
 .gender {
@@ -589,7 +657,9 @@ textarea,
     width: 108px;
 }
 .gender .picker span {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
 }
 .gender .swatch {
     width: 1em;
@@ -599,20 +669,31 @@ textarea,
 
 form button {
 	background:  top center url(../img/green-splash-small.png) no-repeat;
-	background-size: contain;
+	-webkit-background-size:  contain;
+       -moz-background-size:  contain;
+            background-size:  contain;
+
 	font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
 	color: #fff;
 	border:  0;
 	width: 90%;
-        -webkit-transition: all .25s;
+    -webkit-transition: all .25s;
+       -moz-transition: all .25s;
+            transition: all .25s;
 
 }
 form button:hover  {
     -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+            transform: scale(1.1);
 }
 form button span {
-	text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+	-webkit-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+	   -moz-text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+	        text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
 	-webkit-transform: rotate(-8deg);
+       -moz-transform: rotate(-8deg);
+            transform: rotate(-8deg);
 	display: block;
 	font-size: 26px;
 	padding:  50px 0;
@@ -623,37 +704,59 @@ form button span {
 	font-family: DigitalDreamsFat, Courier New, monospace;
 	font-size: 120px;
 	line-height: 320px;
-	text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+	-webkit-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+	   -moz-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+            text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
 	font-weight: normal;
 	background: top center url(../img/timer.png) no-repeat;
-	background-size: contain;
+	-webkit-background-size:  contain;
+       -moz-background-size:  contain;
+            background-size:  contain;
+
 	float: right;
 	width: 50%;
 	text-align: center;
     -webkit-transition: text-shadow .25s;
+       -moz-transition: text-shadow .25s;
+            transition: text-shadow .25s;
 }
 .countdown:hover {
     background: top center url(../img/countdown-bg.gif) no-repeat;
-    text-shadow: 0px 0px 10px #fff, 5px 5px 0 rgba(0,0,0,0.8);
+    -webkit-text-shadow: 0px 0px 10px #fff, 5px 5px 0 rgba(0,0,0,0.8);
+       -moz-text-shadow: 0px 0px 10px #fff, 5px 5px 0 rgba(0,0,0,0.8);
+            text-shadow: 0px 0px 10px #fff, 5px 5px 0 rgba(0,0,0,0.8);
+    -webkit-background-size:  contain;
+       -moz-background-size:  contain;
+            background-size:  contain;
 	
 }
 .done {
 	background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/timer.png) no-repeat;
-   	background-size: auto, contain;
-font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
+   	-webkit-background-size:  auto, contain;
+       -moz-background-size:  auto, contain;
+            background-size:  auto, contain;
+
+    font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
 	font-weight: normal;
     font-size: 40px;
 }
 .done:hover {
 	background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/countdown-bg.gif) no-repeat;
-    text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+    -webkit-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+       -moz-text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+            text-shadow: 0px 0px 0px #fff, 3px 3px 0 rgba(0,0,0,0.8);
+    -webkit-background-size:  auto, contain;
+       -moz-background-size:  auto, contain;
+            background-size:  auto, contain;
 }
 #participate h2 {
 	clear: right;
 	width: 25%;
 	padding: 0 11.5%;
 	float: right;
-	text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+	-webkit-text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+       -moz-text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+            text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
 	font-size: 40px;
 	text-align: center;
 }
@@ -661,7 +764,7 @@ font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans f
     display: block;
     font-size: 12px;
     padding: 15px 0;
-    	font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
+    font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
 }
 
 
@@ -698,6 +801,16 @@ footer h1 {
 }
 .licence {
 	border-top: 7px solid rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 15px;
+}
+.licence a.image {
+    display: block;
+    text-decoration: none;
+}
+.licence a.image img {
+    border: 0;
+    padding: 15px;
 }
 
 /* ==|== non-semantic helper classes ======================================== */

@@ -89,16 +89,18 @@ $('#obstacles ul a').click(function(e) {
 });
 
 // Some form labeling stuff
-$('input[type=text],input[type=email],input[type=url]').focus(function() {
+var filler = function() {
     $(this).parent().addClass('filled');
-});
-$('input[type=text],input[type=email],input[type=url]').blur(function() {
+}
+$('input[type=text],input[type=email],input[type=url]').focus(filler);
+var blurrerrrr = function() {
     $(this).parent().toggleClass('filled', $(this).val() != '');
-});
-
+}
+$('input[type=text],input[type=email],input[type=url]').blur(blurrerrrr);
+$('input[type=text],input[type=email],input[type=url]').each(blurrerrrr);
+$('html').toggleClass('no-placeholder', ! Modernizr.input.placeholder);
 
 // Color picker thingy
-
 $('.fakeselect').click(function() {
     $('.picker', $(this).parent()).toggle();
 });
@@ -109,7 +111,11 @@ $('.picker span').click(function(e) {
     
     c = '<span class="swatch"></span>' + $(this).text();
     $('.fakeselect', $(this).parent().parent()).html( c );
-    $('.fakeselect span', $(this).parent().parent()).css('background', $(this).data('color-value'));
+    $('.fakeselect span', $(this).parent().parent()).css({
+        'background': $(this).data('color-value'),
+        'background-size': 'contain',
+        '-moz-background-size': 'contain'
+    });
 });
 
 // The Final Countdown - de ne neerrr nerrrrr!
