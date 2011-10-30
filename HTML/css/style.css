@@ -152,12 +152,16 @@ nav li {
 	display: inline;
 }
 nav a {
+    
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 3px 5px;
 	line-height: 32px;
-	font-size: 12px;
+	font-size: 18px;
+	padding: 0 10px;
 }
+nav a[href="#top"]:before {
+		content: ""
+	}
 nav a:hover,
 nav a.selected {
 	color: #fff;
@@ -283,7 +287,7 @@ section h1 {
 	font-size: 40px;
 	text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
 	margin: 40px 0 60px 0;
-	background: 100% 10px url(../img/checks.png) no-repeat;
+	background: 180px 10px url(../img/checks.png) no-repeat;
 }
 section {
 	border-top: 7px solid rgba(0,0,0,0.08);
@@ -427,6 +431,9 @@ section .inner {
 }
 #obstacles .panel .inner div img {
 	max-width: 80%;
+}
+#obstacles .panel .inner div#slide img {
+    max-width: 70%;
 }
 
 /* ==|== prizes section ==================================================== */
@@ -576,7 +583,7 @@ textarea,
 	width: 90%;
 }
 ::-webkit-input-placeholder {
-	color: #fff;
+color: #fff;
 }
 :-moz-placeholder {
 	color: #fff;
@@ -837,24 +844,146 @@ footer h1 {
 
 /* ==|== media queries ====================================================== */
 
-@media only screen and (min-width: 480px) {
-	nav a {
-		font-size: 18px;
-		padding: 0 10px;
+@media only screen and (max-width: 950px) {
+
+    .inner {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    header h2 {
+        margin: 40px 0;
+    }
+   
+    #obstacles ul {
+        width: 15%;
+        margin-left: 5%;
+    }
+    #obstacles li {
+        width: 100%;
+    }
+    #obstacles .panel {
+        width: 75%;
+    }
+    
+    #obstacles li a,
+    #obstacles li.tank a    {
+        text-indent: -1000px;
+        overflow: hidden;
+        padding: 40% 0px;
+        background-position: 50% 50%;
+    }
+    .inner {
+        padding: 10px;
+    }
+    #prizes li {
+        width: 40%;
+        padding: 20px 5%;
+    }
+    .warnings, .vcard {
+        width: auto;
+    }
+    .warnings p,
+    .warnings p:first-child,
+    .warnings p:last-child,
+    .vcard .adr,
+    .vcard .adr:last-child    {
+        width: 70%;
+        margin: 0 auto 10px;
+        float: none;
+        text-align: center;
+    }
+    .tv {
+        top: -80px;
+    }
+    .keyboard {
+        top: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+	
+    nav a {
+        padding: 3px 5px;
+        font-size: 12px;		
 	}
 	nav a[href="#top"]:before {
-		content: "Back to "
+		content: ""
 	}
+    header h1 {
+        width: 75%;
+        margin: 30px auto 0;
+    }
+    
+    header h2 {
+        font-size: 32px;
+        margin: 20px 0
+    }
+    header p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    section h1,
+    #obstacles h1    {
+        font-size: 26px;
+        height: 50px;
+        background: top center url(../img/checks.png) no-repeat;
+        text-align: center;
+        margin: 0px 0 20px 0;
+    }
+    #obstacles .panel .inner div h2 {
+        font-size: 26px;
+    }
+    #obstacles .panel .inner div p {
+        font-size: 16px
+    }
+    #obstacles .panel .inner div img {
+        margin-top: 40px;
+    }
+    #prizes li p {
+        font-size: 12px;
+    }
+    form {
+        float: none;
+        width: 100%;
+    }
+    .countdown {
+        display: none;
+    }
+    #participate h2 {
+        display: none;
+    }
+    .warnings p,
+    .warnings p:first-child    {
+        width: 90%;
+        float: none;
+        text-align: center;
+    }
+        
+    .tv {
+        top: -30px;
+    }
+    .keyboard {
+        top: 40px;
+    }
 
+} 
+
+
+@media only screen and (min-width: 1268px) {
+
+    /* Plenty of pixel screens */
+    
 }
 
-@media only screen and (min-width: 768px) {
-
-}
 
 /* ==|== print styles ======================================================= */
 
 @media print {
+
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
@@ -867,4 +996,6 @@ footer h1 {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+  
+  /* TODO: Better print layout */
 }
