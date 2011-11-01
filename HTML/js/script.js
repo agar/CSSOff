@@ -16,7 +16,7 @@ $(window).resize(function() {
     var h = $(window).height();
     $('header,#obstacles,#prizes').css('min-height', (h - 14));
     $('header h1 span').css('height', Math.min($('header h1 span').width() - 40, 425));
-    $('#obstacles li.selected').click();
+    $('#obstacles li.selected a').click();
 }).resize();
 
 // Scrolling navigation
@@ -115,7 +115,10 @@ $('.color-picker, .gender').each(function(i) {
             $span.css('background', value);
         } else {
             $span.data('color-value', 'url(img/'+value+'.png)');
-            $span.css('background', 'url(img/'+value+'.png)');
+            $span.css({
+                'background': 'url(img/'+value+'.png)',
+                'background-size': 'contain'
+            });
         }
         $picker.append($span);
     });

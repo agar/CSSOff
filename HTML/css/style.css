@@ -160,8 +160,8 @@ nav a {
     padding: 0 10px;
 }
 nav a[href="#top"]:before {
-        content: ""
-    }
+    content: "Back to "
+}
 nav a:hover,
 nav a.selected {
     color: #fff;
@@ -928,6 +928,8 @@ footer h1 {
         background: top center url(../img/checks.png) no-repeat;
         text-align: center;
         margin: 0px 0 20px 0;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5), 3px 4px 0 rgba(0, 0, 0, 0.2);
+
     }
     #obstacles .panel .inner div h2 {
         font-size: 26px;
