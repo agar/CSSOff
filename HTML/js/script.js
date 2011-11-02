@@ -161,9 +161,10 @@ var countdownTimer = setInterval(function() {
 
 // Super basic text shadow for the underprivileged (Ie IE)
 $('header h2').poorMansTextShadow({color: '#ffffff', 'vertical': 3, 'horizontal': 3});
-$('section h1, button, #participate h2').poorMansTextShadow({color: '#333333', 'vertical': 3, 'horizontal': 3});
+$('section h1, button, #participate h2').poorMansTextShadow({color: '#444444', 'vertical': 3, 'horizontal': 3});
 
-
+// Helper classes
+$('.warnings p:last-child,.vcard .adr:last-child').addClass('last-child');
 
 
 

@@ -6,20 +6,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
-
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
 ::-moz-selection { background: #fe6537; color: #fff; text-shadow: none; }
 ::selection { background: #fe6537; color: #fff; text-shadow: none; }
-
 a { color: #fff; -webkit-transition: all 0.25s; }
 a:visited { color: #fff; }
 a:hover { color: rgb(15,40,48); }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
@@ -41,7 +37,6 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 svg:not(:root) { overflow: hidden; }
 figure { margin: 0; }
-
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 label { cursor: pointer; }
@@ -55,7 +50,6 @@ input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-b
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
-
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
@@ -70,10 +64,7 @@ td { vertical-align: top; }
          url('../fonts/KomikaTitle-Paint-webfont.svg#KomikaTitle-PaintRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
 @font-face {
     font-family: 'DigitalDreamsFat';
     src: url('../fonts/DIGITALDREAMFAT-webfont.eot');
@@ -83,9 +74,7 @@ td { vertical-align: top; }
          url('../fonts/DIGITALDREAMFAT-webfont.svg#DIGITALDREAMFAT') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 @font-face {
     font-family: 'OpenSansSemibold';
     src: url('../fonts/OpenSans-Semibold-webfont.eot');
@@ -95,19 +84,6 @@ td { vertical-align: top; }
          url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'OpenSansSemiboldItalic';
-    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
-    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /* ==|== general page styles ================================================= */
@@ -121,6 +97,9 @@ body {
     font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.4;
+}
+.oldie body {
+	background:  top center url(../img/ie-bg-blue.jpg) repeat #80c1d6;
 }
 img {
     max-width: 100%;
@@ -145,6 +124,9 @@ nav {
        -moz-transition: all 0.5s;
             transition: all 0.5s;
 }
+.oldie nav {
+	background: #52AAC7;
+}
 nav:hover {
     background: rgba(15,40,48,0.4);
 }
@@ -152,7 +134,6 @@ nav li {
     display: inline;
 }
 nav a {
-
     text-decoration: none;
     text-transform: uppercase;
     line-height: 32px;
@@ -178,12 +159,21 @@ nav a.selected {
          -o-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
             box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
 }
+.oldie nav a.selected {
+    border-bottom:  1px dotted #fff;
+	outline:  0;
+}
 
 /* ==|== introduction ====================================================== */
 
 header {
     text-align: center;
     padding: 0px;
+}
+.oldie header {
+	background: top center url(../img/ie-home-bg.jpg) no-repeat;
+	margin-top: -60px;
+	padding-top: 60px;
 }
 @-webkit-keyframes logoanimation {
     0%   { -webkit-transform: scale(0) rotate(90deg); opacity: 0 }
@@ -211,6 +201,9 @@ header h1 {
        -moz-animation-fill-mode: both;
             animation-fill-mode: both;
 }
+.oldie header h1 {
+	background: top center url(../img/ie-logo.png) no-repeat;
+}
 header h1 span {
     background: top center url(../img/logo-white.png) no-repeat, top center url(../img/logo-orange.png) no-repeat;
     display: inline-block;
@@ -237,7 +230,6 @@ header h1 span:hover {
         -ms-transform: rotate(5deg) scale(1.2);
             transform: rotate(5deg) scale(1.2);
 }
-
 header h2 {
     color: #fe6537;
     font-size: 52px;
@@ -280,7 +272,6 @@ header p:hover {
 
 }
 
-
 /* ==|== common section styling ============================================ */
 
 section h1 {
@@ -306,10 +297,12 @@ section .inner {
     background-position: center top;
     background-repeat: repeat;
 }
+.oldie obstacles {
+	background:  top left url(../img/ie-bg-orange.jpg) repeat;
+}
 #obstacles h1 {
     background-position: 280px 10px;
 }
-
 #obstacles ul {
     list-style:  none;
     margin:  0;
@@ -318,8 +311,8 @@ section .inner {
     width: 50%;
 }
 #obstacles li {
-    width: 45%;
-    margin: 0 5% 5% 0;
+    width: 46%;
+    margin: 0 4% 4% 0;
     float: left;
     padding:  0;
     background-color: #80b238;
@@ -329,14 +322,14 @@ section .inner {
     -webkit-border-radius: 15px;
        -moz-border-radius: 15px;
             border-radius: 15px;
-
     -webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+		    transition: all 0.5s;
 }
 #obstacles li:hover,
 #obstacles li.selected {
     background-color: #eef13f;
     background-image: url(../img/bg-yellow.png);
-
 }
 #obstacles li.wheel,
 #obstacles li.pick{
@@ -363,36 +356,49 @@ section .inner {
     -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
-
 }
 #obstacles li.pick a {
     background-image:  url(../img/obstacle-pick.png);
     -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
-
 }
 #obstacles li.slide a {
     background-image:  url(../img/obstacle-slide.png);
     -webkit-background-size:  50%;
        -moz-background-size:  50%;
             background-size:  50%;
-
 }
 #obstacles li.hatch a {
     background-image:  url(../img/obstacle-hatch.png);
     -webkit-background-size:  50%;
        -moz-background-size:  50%;
             background-size:  50%;
-
 }
 #obstacles li.tank a {
     background-image:  url(../img/obstacle-tank.png);
+	background-position: 50% 35%;
     -webkit-background-size:  65%;
        -moz-background-size:  65%;
             background-size:  65%;
-
-    background-position: 50% 35%
+}
+.oldie #obstacles li.wheel a {
+    background: 0 -245px url(../img/ie-obstacles.png) no-repeat;
+}
+.oldie #obstacles li.wringer a {
+	background: -235px -490px url(../img/ie-obstacles.png) no-repeat;
+}
+.oldie #obstacles li.pick a {
+	background: 0 -485px url(../img/ie-obstacles.png) no-repeat;
+}
+.oldie #obstacles li.slide a {
+	background: -235px -0px url(../img/ie-obstacles.png) no-repeat;
+}
+.oldie #obstacles li.hatch a {
+	background: -240px -245px url(../img/ie-obstacles.png) no-repeat;
+}
+.oldie #obstacles li.tank a {
+	background: 0 0 url(../img/ie-obstacles.png) no-repeat;
 }
 #obstacles .panel {
     float: right;
@@ -410,7 +416,6 @@ section .inner {
     margin-right: 0.66%;
     background:  top center url(../img/green-splash-small.png) no-repeat;
     text-align: center;
-
 }
 #obstacles .panel .inner div h2,
 #obstacles .panel .inner div p {
@@ -497,7 +502,6 @@ section .inner {
        -moz-transition: all 0.5s;
             transition: all 0.5s;
 }
-
 #prizes li:hover img {
     -webkit-transform: scale(1.1);
        -moz-transform: scale(1.1);
@@ -518,7 +522,6 @@ section .inner {
     top: -110px;
 }
 
-
 /* ==|== be a contestant section =========================================== */
 
 #participate {
@@ -528,11 +531,12 @@ section .inner {
     padding-bottom: 110px;
     border-bottom: 7px solid rgba(0,0,0,0.08);
 }
-
+.oldie #participate .inner {
+	border-bottom: 7px solid #70ADC2;
+}
 #participate h1 {
     background-position: 420px 10px;
 }
-
 form {
     float: left;
     width: 42%;
@@ -632,7 +636,6 @@ textarea,
     -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
-
 }
 .picker span:hover {
     -webkit-box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -655,9 +658,7 @@ textarea,
     -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
-
 }
-
 .gender {
     float: left;
     width: 40%;
@@ -676,13 +677,11 @@ textarea,
     height: 1em;
     border: 0;
 }
-
 form button {
     background:  top center url(../img/green-splash-small.png) no-repeat;
     -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
-
     font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
     color: #fff;
     border:  0;
@@ -690,7 +689,6 @@ form button {
     -webkit-transition: all .25s;
        -moz-transition: all .25s;
             transition: all .25s;
-
 }
 form button:hover  {
     -webkit-transform: scale(1.1);
@@ -710,8 +708,6 @@ form button span {
     font-size: 26px;
     padding:  50px 0;
 }
-
-
 .countdown {
     font-family: DigitalDreamsFat, Courier New, monospace;
     font-size: 120px;
@@ -724,13 +720,15 @@ form button span {
     -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
-
     float: right;
     width: 50%;
     text-align: center;
     -webkit-transition: text-shadow .25s;
        -moz-transition: text-shadow .25s;
             transition: text-shadow .25s;
+}
+.oldie .countdown {
+	line-height: 340px;
 }
 .countdown:hover {
     background: top center url(../img/countdown-bg.gif) no-repeat;
@@ -740,14 +738,12 @@ form button span {
     -webkit-background-size:  contain;
        -moz-background-size:  contain;
             background-size:  contain;
-
 }
 .done {
     background: 46% 45% url(../img/green-splash-small.png) no-repeat, top center url(../img/timer.png) no-repeat;
        -webkit-background-size:  auto, contain;
        -moz-background-size:  auto, contain;
             background-size:  auto, contain;
-
     font-family: KomikaTitle-PaintRegular, 'Comic Sans', sans-serif; /* comic sans ftw! ;) */
     font-weight: normal;
     font-size: 40px;
@@ -779,8 +775,6 @@ form button span {
     font-family: OpenSansSemibold, Helvetica, Arial, sans-serif;
 }
 
-
-
 /* ==|== page footer ======================================================= */
 
 footer {
@@ -795,6 +789,7 @@ footer h1 {
 .vcard {
     width: 620px;
     margin: 0 auto;
+
 }
 .warnings p,
 .vcard .adr {
@@ -807,7 +802,12 @@ footer h1 {
     float: left;
 }
 .warnings p:last-child,
-.vcard .adr:last-child {
+.vcard .adr:last-child  {
+    text-align: left;
+    float: right;
+}
+.warnings p.last-child,
+.vcard .adr.last-child {
     text-align: left;
     float: right;
 }
@@ -815,6 +815,9 @@ footer h1 {
     border-top: 7px solid rgba(0,0,0,0.08);
     text-align: center;
     padding: 15px;
+}
+.oldie .licence {
+	border-top: 7px solid #70ADC2;
 }
 .licence a.image {
     display: block;
@@ -840,18 +843,15 @@ footer h1 {
 /* ==|== media queries ====================================================== */
 
 @media only screen and (max-width: 950px) {
-
     .inner {
         padding: 10px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-
     header h2 {
         margin: 40px 0;
     }
-
     #obstacles ul {
         width: 15%;
         margin-left: 5%;
@@ -862,7 +862,6 @@ footer h1 {
     #obstacles .panel {
         width: 75%;
     }
-
     #obstacles li a,
     #obstacles li.tank a    {
         text-indent: -1000px;
@@ -896,11 +895,9 @@ footer h1 {
     .keyboard {
         top: 40px;
     }
-
 }
 
 @media only screen and (max-width: 480px) {
-
     nav a {
         padding: 3px 5px;
         font-size: 12px;
@@ -912,7 +909,6 @@ footer h1 {
         width: 75%;
         margin: 30px auto 0;
     }
-
     header h2 {
         font-size: 32px;
         margin: 20px 0
@@ -957,28 +953,17 @@ footer h1 {
         float: none;
         text-align: center;
     }
-
     .tv {
         top: -30px;
     }
     .keyboard {
         top: 40px;
     }
-
 }
-
-
-@media only screen and (min-width: 1268px) {
-
-    /* Plenty of pixel screens */
-
-}
-
 
 /* ==|== print styles ======================================================= */
 
 @media print {
-
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
@@ -991,6 +976,4 @@ footer h1 {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
-
-  /* TODO: Better print layout */
 }
