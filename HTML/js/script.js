@@ -156,7 +156,6 @@ var countdownTimer = setInterval(function() {
         $('.countdown').addClass('done').html('Time&lsquo;s up<sup>*</sup>');
         clearInterval(countdownTimer);
         $('#participate h2').html('<small><sup>*</sup>We like the cut of your jib, so we\'ll give you a little longer!</small>').addClass('times-up');
-        // TODO: Something grand when the timer stops... slime splodge perhaps - "Be quick!"
     } else {
         $('.countdown').html(v);
     }
